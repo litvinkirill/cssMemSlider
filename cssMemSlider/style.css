@@ -8,7 +8,7 @@ html, body {
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
     margin: 25px auto;
-    width: 700px;
+    width: 70vw;
 }
 
 .slider-inner {
@@ -26,6 +26,7 @@ html, body {
     position: absolute;
     opacity: 0;
     transition: opacity 0.6s ease-out;
+    white-space: pre-line;
 }
 
 .slider-item img {
@@ -42,7 +43,7 @@ html, body {
     top: 41px;
 }
 #item4::after {
-    content: "When you don't know why the code worked.";
+    content: "When you don't know \Awhy the code worked.";
     font-size: 40px;
     color: white;
     position: relative;
@@ -63,7 +64,7 @@ html, body {
     top: 41px;
 }
 #item5::after {
-    content: "When you can't complete the task.";
+    content: "Goodbye!";
     font-size: 40px;
     color: white;
     position: relative;
@@ -115,7 +116,7 @@ html, body {
     padding: 0;
     position: relative;
     bottom: 2%;
-    left: 270px;
+    left: 250px;
     text-align: center;
     z-index: 10;
 }
@@ -129,7 +130,7 @@ html, body {
     color: #fff;
     cursor: pointer;
     display: block;
-    font-size: 35px;
+    font-size: 80px;
 }
 
 .slide-bullet:hover {
