@@ -8,7 +8,7 @@ html, body {
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
     margin: 25px auto;
-    width: 70vw;
+    width: 50vw;
 }
 
 .slider-inner {
@@ -43,7 +43,7 @@ html, body {
     top: 41px;
 }
 #item4::after {
-    content: "When you don't know \Awhy the code worked.";
+    content: "Debugging";
     font-size: 40px;
     color: white;
     position: relative;
@@ -116,7 +116,7 @@ html, body {
     padding: 0;
     position: relative;
     bottom: 2%;
-    left: 250px;
+    left: 35%;
     text-align: center;
     z-index: 10;
 }
@@ -143,4 +143,42 @@ html, body {
 #slide-4:checked ~ .control-4 ~ .slider-indicators li:nth-child(4) .slide-bullet,
 #slide-5:checked ~ .control-5 ~ .slider-indicators li:nth-child(5) .slide-bullet {
     color: #428bca;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+    .wrapper {
+        width: 60vw;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .wrapper {
+        width: 70vw;
+    }
+    .slider-indicators {
+        left: 30%;
+    }
+}
+@media screen and (min-width: 420px) and (max-width: 767px) {
+    .wrapper {
+        width: 80vw;
+    }
+    .slider-indicators {
+        left: 0%;
+        margin: -75px 0px 37px;
+    }
+}
+@media screen and (min-width: 310px) and (max-width: 419px) {
+    .wrapper {
+        width: 90vw;
+    }
+    .slider-indicators {
+        left: 0%;
+        margin: -63px 0px 37px;
+    }
+    #item5::after, #item4::after, 
+    #item3::after, #item2::after, 
+    #item1::after {
+        font-size: 30px;
+    } 
 }
