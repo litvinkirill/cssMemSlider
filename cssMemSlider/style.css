@@ -16,3 +16,56 @@ html, body {
     overflow: hidden;
     width: 100%;
 }
+
+.slider-open:checked + .slider-item {
+    position: static;
+    opacity: 100;
+}
+
+.slider-item {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+}
+
+.slider-item img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+#item1::after {
+    content: 'I want to break free!';
+    font-size: 40px;
+    color: white;
+    position: relative;
+    top: 41px;
+}
+#item2::after {
+    content: "When you don't know why the code worked.";
+    font-size: 40px;
+    color: white;
+    position: relative;
+    top: 41px;
+}
+#item3::after {
+    content: 'Winter is coming!';
+    font-size: 40px;
+    color: white;
+    position: relative;
+    top: 41px;
+}
+#item4::after {
+    content: 'Brainy’s the new sexy.';
+    font-size: 40px;
+    color: white;
+    position: relative;
+    top: 41px;
+}
+#item5::after {
+    content: "When you can't complete the task.";
+    font-size: 40px;
+    color: white;
+    position: relative;
+    top: 41px;
+}
